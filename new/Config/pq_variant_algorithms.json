@@ -1,0 +1,31 @@
+{
+  "provider_name": "pqvariantprovider",
+  "provider_output_name": "pqvariantprovider",
+  "provider_source": "new/provider/pqvariant/pqvariant_provider.c",
+  "source_dirs": [
+    "new/alg/experimental_pq/sntrup761_clean",
+    "new/alg/experimental_pq/cross-rsdp-128-small_clean"
+  ],
+  "extra_sources": [
+    "new/alg/experimental_pq/common/pq_randombytes.c",
+    "new/alg/experimental_pq/common/pq_sha2_openssl.c",
+    "new/alg/experimental_pq/common/pq_fips202_openssl.c"
+  ],
+  "include_dirs": [
+    "new/alg/experimental_pq/common",
+    "new/alg/experimental_pq/sntrup761_clean",
+    "new/alg/experimental_pq/cross-rsdp-128-small_clean"
+  ],
+  "algorithms": [
+    {
+      "alg_id": "0x00F3E761",
+      "name": "sntrup761",
+      "class": "kem"
+    },
+    {
+      "alg_id": "0x00F3D128",
+      "name": "cross-rsdp-128-small",
+      "class": "signature"
+    }
+  ]
+}

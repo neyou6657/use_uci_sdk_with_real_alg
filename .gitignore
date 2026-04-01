@@ -1,0 +1,6 @@
+**/__pycache__/
+cli/build/
+new/output/install/
+*.o
+*.a
+*.d

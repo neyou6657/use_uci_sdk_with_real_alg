@@ -1,0 +1,20 @@
+{
+  "provider": "pqvariantprovider",
+  "provider_so": "/workspace/uciapi/new/output/providers/pqvariantprovider.so",
+  "provider_modules_dir": "/workspace/uciapi/new/output/providers",
+  "patch_conf": "/workspace/uciapi/new/output/pqvariantprovider.patch.conf",
+  "algorithms": [
+    {
+      "alg_id": "0x00F3E761",
+      "name": "sntrup761",
+      "class": "kem",
+      "properties": "provider=pqvariantprovider"
+    },
+    {
+      "alg_id": "0x00F3D128",
+      "name": "cross-rsdp-128-small",
+      "class": "signature",
+      "properties": "provider=pqvariantprovider"
+    }
+  ]
+}
